@@ -1,9 +1,9 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Button from "./components/Button";
 import NavBar from "./components/NavBar";
 import Card from "./components/Card";
+import Feature from "./components/Feature";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +14,7 @@ function App() {
       <div className="w-3/5 text-[3.125rem] font-light">
         Welcome to fornit, where style meets comforts
       </div>
-      <div className="w-2/5">
+      <div className="w-3/5">
         <h1 className="text-[#595959]">
           Our collection of furniture is carefully curated to bring you the best
           in quality and design. Whether you're looking to update your living
@@ -43,6 +43,32 @@ function App() {
             name="Aishat Abdulfatah"
             address="Oloje Ilorin "
             role="Developer"
+          />
+          <Card
+            name="Abdullah Uthman"
+            address="Gaa akanbi"
+            role="developer"
+            img="/images/vite.svg"
+          />
+        </section>
+        <section className="grid grid-cols-3">
+          <Feature
+            img="/vectors/bookmark.svg"
+            title="Web & Mobile Development"
+            desc=" We design and develop tech solutions for SMEs and Government Agency."
+            link="google.com"
+          />
+          <Feature
+            img="/vectors/bookmark.svg"
+            title="Bootcamps & Trainings"
+            desc="We’re building the next generation of tech talents."
+            link="codevillage.org"
+          />
+          <Feature
+            img="/vectors/bookmark.svg"
+            title="Workspaces & Tech Hub"
+            desc="Work and Connect with other Creatives. All in a fun and cozy environment."
+            link="abc.xyz"
           />
         </section>
       </div>
