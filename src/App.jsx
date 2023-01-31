@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import NavBar from "./components/NavBar";
 import Card from "./components/Card";
 import Feature from "./components/Feature";
+import Counter from "./components/Counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -72,6 +73,7 @@ function App() {
           />
         </section>
       </div>
+      <Counter />
     </main>
   );
 }
